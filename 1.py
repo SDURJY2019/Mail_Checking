@@ -21,6 +21,7 @@ def gettoken(refresh_token):
     with open(path, 'w+') as f:
         f.write(refresh_token)
     return access_token
+
 def main():
     fo = open(path, "r+")
     refresh_token = fo.read()
