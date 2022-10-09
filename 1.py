@@ -3,7 +3,7 @@ import requests as req
 import json,sys,time
 
 path=sys.path[0]+r'/1.txt'
-num1 = 0
+num1=0
 
 def gettoken(refresh_token):
     headers={'Content-Type':'application/x-www-form-urlencoded'}
@@ -23,10 +23,7 @@ def main():
     global num1
     localtime = time.asctime( time.localtime(time.time()) )
     access_token=gettoken(refresh_token)
-    headers={
-    'Authorization':access_token,
-    'Content-Type':'application/json'
-    }
+    headers={'Authorization':access_token,'Content-Type':'application/json'}
     try:
         if req.get(r'https://graph.microsoft.com/v1.0/me/drive/root',headers=headers).status_code == 200:
             num1+=1
