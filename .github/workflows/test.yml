@@ -2,8 +2,13 @@ name:New Mail Box Test
 
 on: 
   workflow_dispatch:
-    tags:
-    - 'v*'
+    inputs:
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Test scenario tags' 
    
 jobs:
   build:
