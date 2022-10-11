@@ -1,4 +1,4 @@
-name: Mail Box Test
+name:New Mail Box Test
 
 on: 
   workflow_dispatch:
