@@ -2,6 +2,8 @@ name:New Mail Box Test
 
 on: 
   workflow_dispatch:
+    tags:
+    - 'v*'
    
 jobs:
   build:
