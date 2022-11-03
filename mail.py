@@ -8,7 +8,7 @@ import json,sys,time
 
 
 
-path=sys.path[0]+r'/1.txt'
+path=sys.path[0]+r'/license.txt'
 num1 = 0
 
 def gettoken(refresh_token):
