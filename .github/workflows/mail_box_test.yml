@@ -39,8 +39,8 @@ jobs:
         python mail.py
     - name: Commit
       run: |
-        git config --global user.email AutoupdateRobot@email.com
-        git config --global user.name AutoupdateRobot
+        git config --global user.email Robot@email.com
+        git config --global user.name Robot
         git add .
         git commit -m "update new refresh_token" -a
     - name: Push changes
