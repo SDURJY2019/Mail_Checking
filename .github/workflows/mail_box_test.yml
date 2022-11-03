@@ -32,8 +32,8 @@ jobs:
       run: | 
         echo $CONFIG_ID > configid.txt
         echo $CONFIG_KEY > configkey.txt
-        sed -i '10 r configid.txt' 1.py
-        sed -i '12 r configkey.txt' 1.py
+        sed -i '10 r configid.txt' mail.py
+        sed -i '12 r configkey.txt' mail.py
     - name: Mail
       run: | 
         python 1.py
